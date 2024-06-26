@@ -1,0 +1,110 @@
+@font-face {
+    font-family:'Playfair_Display' ;
+    src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Montserrat' ;
+    src: url("../fonts/montserrat/Montserrat-Light.otf") format('truetype');
+}
+
+@font-face {
+    font-family: 'ClashDisplay' ;
+    src: url("../fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf") format("truetype");
+}
+
+body{
+    background-color: black;
+    color: #B7BCA9;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #B7BCA9;
+}
+
+a:hover {
+    color:#464644ac;
+    transition: 0.5s;
+}
+
+
+nav {
+    padding: 0px;
+    margin: 10px;
+    font-family: 'Playfair_Display';
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    
+}
+
+h1 {
+    font-family: 'Playfair_Display';
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+body, .footer {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+h2 {
+    font-family: 'ClashDisplay';
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+}
+
+.texte {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .carte, .reseaux {
+        margin-top: 20px;
+    }
+
+}

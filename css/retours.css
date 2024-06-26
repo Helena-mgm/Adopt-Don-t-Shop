@@ -1,0 +1,96 @@
+@font-face {
+    font-family:'Playfair_Display' ;
+    src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Montserrat' ;
+    src: url("../fonts/montserrat/Montserrat-Light.otf") format('truetype');
+}
+
+@font-face {
+    font-family: 'ClashDisplay' ;
+    src: url("../fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf") format("truetype");
+}
+
+/* entête */
+
+body {
+    background-color: black;
+    color: #B7BCA9;
+    font-family: 'Montserrat';
+}
+
+nav {
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Playfair_Display';
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #B7BCA9;
+}
+
+a:hover {
+    color:#464644ac;
+    transition: 0.5s;
+}
+
+/* Partie principale */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair_Display';
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.texte {
+    text-align: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.signature {
+    font-family: 'Playfair_Display';
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+    display: flex;
+    justify-content: right;
+}
+
+
+/* Footer */
+
+.reseaux, .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}

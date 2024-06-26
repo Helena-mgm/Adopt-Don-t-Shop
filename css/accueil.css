@@ -1,0 +1,71 @@
+@font-face {
+    font-family:'Playfair_Display' ;
+    src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Montserrat' ;
+    src: url("../fonts/montserrat/Montserrat-Light.otf") format('truetype');
+}
+
+@font-face {
+    font-family: 'ClashDisplay' ;
+    src: url("../fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf") format("truetype");
+}                                                                                                                                                                                                                                                                                                                                                                                                                        
+
+
+/* Partie principale */
+
+body {
+    background-color: rgba(35,27,24,255);
+    display: block;
+    flex-direction: row;
+}
+
+h1 {
+    color: #B7BCA9;
+    font-family: 'ClashDisplay';
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+body img {
+    float:right
+}
+
+/* Topbar */
+
+nav {
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Playfair_Display';
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #B7BCA9;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #464644ac;
+    transition: color 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    body img {
+        display: none;
+    }
+    h1 {
+        font-size: 50px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
